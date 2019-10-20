@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Company Home Page</title>
+<meta name="companywebsite" content="homepage">
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "css/website.css" />
+<script language="JavaScript" src="js/homework3.js"></script>
+</head>
+<body>
+<h1><a href = "index.html">Home</a></h1>
+<h3><a href="aboutus.html">About Us</a></h3>
+<h3><a href="products.html">Products</a></h3>
+<h3><a href="contact.html">Contact</a></h3>
+<h3><a href="directory.html">Directory</a></h3>
+<strong>You may contact us directly using this form here!</strong>
+</br></br>
+<form name="my_form" method="post" id="inquiry" onsubmit="return validateForm();">
+        First Name:</br>
+        <input type="text" name="firstname"></br>
+	Last Name:</br>
+        <input type="text" name="lastname"></br>
+        Address:</br>
+        <input type="text" name="address"></br>
+        Phone Number:</br>
+	<input type="text" name="phonenumber"></br>
+	Inquiry:</br>
+	<textarea name="inquiryinfo" form="inquiry"></textarea></br></br>
+        <input type="submit" value="Submit Form ">
+</form>
+</body>
+</html>
