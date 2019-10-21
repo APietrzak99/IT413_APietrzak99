@@ -1,5 +1,11 @@
 <html>
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <title>Company Products</title>
 <meta name="companywebsite" content="products">
 <link rel = "stylesheet"
@@ -7,47 +13,91 @@
    href = "css/website.css" />
 </head>
 <body>
-<h1><a href = "index.html">Home</a></h1>
-<h3><a href="aboutus.html">About Us</a></h3>
-<h3><a href="products.html">Products</a></h3>
-<h3><a href="contact.html">Contact</a></h3>
-<h3><a href="directory.html">Directory</a></h3>
-<table>
-  <tr>
-    <th>Product</th>
-    <th>Price</th>
-    <th>Availability</th>
-  </tr>
-  <tr>
-    <td>XML All-In-One Tutorial</td>
-    <td>$30</td>
-    <td><strong>Available for Download</strong></td>
-  </tr>
-  <tr>
-    <td>Exploring Art: A Global, Thematic Approach 5th Edition</td>
-    <td>$20</td>
-    <td><strong>Available for Purchase</strong></td>
-  </tr>
-  <tr>
-    <td>Chemistry: The Science in Context Fifth Edition</td>
-    <td>$25</td>
-    <td><strong>Out Of Stock - Will Restock 10/14</strong></td>
-  </tr>
-  <tr>
-    <td>Glencoe Algebra 1</td>
-    <td>$15</td>
-    <td><strong>Available for Purchase</strong></td>
-  </tr>
-<tr>
-    <td>The Essentials of English: A Writer's Handbook</td>
-    <td>$30</td>
-    <td><strong>Available for Purchase</strong</td>
-  </tr>
-<tr>
-    <td>CSS All-In-One Tutorial</td>
-    <td>$35</td>
-    <td><strong>Available for Download</strong></td>
-  </tr>
-</table>
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">My Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="products.html">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Company Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="aboutus.html">About Us</a>
+                <a class="dropdown-item" href="contact.html">Contact Us</a>
+                <a class="dropdown-item" href="directory.html">Company Directory</a>
+            </div>
+        </li>
+        </ul>
+    </div>
+</nav>
+<br><br>
+<div class="card-group">
+    <div class="card">
+      <img src="images/xmltutorial.png" class="card-img-top" alt="xmltutorialimg">
+      <div class="card-body">
+        <h5 class="card-title">$30</h5>
+        <p class="card-text">XML All-In-One Tutorial</p>
+        <p class="card-text"><small class="text-muted">AVAILABLE FOR DOWNLOAD</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/artbook.jpg" class="card-img-top" alt="artbookimg">
+      <div class="card-body">
+        <h5 class="card-title">$20</h5>
+        <p class="card-text">Exploring Art: A Global, Thematic Approach 5th Edition</p>
+        <p class="card-text"><small class="text-muted">AVAILABLE FOR PURCHASE</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/chemistrybook.jpg" class="card-img-top" alt="chemistrybookimg">
+      <div class="card-body">
+        <h5 class="card-title">$25</h5>
+        <p class="card-text">Chemistry: The Science in Context Fifth Edition</p>
+        <p class="card-text"><small class="text-muted">OUT OF STOCK - WILL RESTOCK 10/14</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+      <div class="card">
+        <img src="images/algebrabook.jpg" class="card-img-top" alt="algebrabookimg">
+        <div class="card-body">
+          <h5 class="card-title">$15</h5>
+          <p class="card-text">Glencoe Algebra 1</p>
+          <p class="card-text"><small class="text-muted">AVAILABLE FOR PURCHASE</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/englishbook.jpg" class="card-img-top" alt="englishbookimg">
+        <div class="card-body">
+          <h5 class="card-title">$30</h5>
+          <p class="card-text">The Essentials of English: A Writer's Handbook</p>
+          <p class="card-text"><small class="text-muted">AVAILABLE FOR PURCHASE</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/cssimg.png" class="card-img-top" alt="csstutorialimg">
+        <div class="card-body">
+          <h5 class="card-title">$35</h5>
+          <p class="card-text">CSS All-In-One Tutorial</p>
+          <p class="card-text"><small class="text-muted">AVAILABLE FOR DOWNLOAD</small></p>
+        </div>
+      </div>
+    </div>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
